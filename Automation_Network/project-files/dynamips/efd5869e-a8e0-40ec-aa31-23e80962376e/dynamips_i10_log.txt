@@ -1,0 +1,44 @@
+Feb 04 15:55:42.591 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Feb 04 15:55:42.591 HYPERVISOR: Started on TCP port = 55825.
+Feb 04 15:55:43.049 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 04 15:55:43.050 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\USER\GNS3\projects\Automation_Network\project-files\dynamips 
+Feb 04 15:55:43.050 GENERAL: working_dir=C:\Users\USER\GNS3\projects\Automation_Network\project-files\dynamips
+Feb 04 15:55:43.051 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\USER\GNS3\projects\Automation_Network\project-files\dynamips\26203d82-48be-485b-91ea-07cfc23ceb87 
+Feb 04 15:55:43.056 GENERAL: working_dir=C:\Users\USER\GNS3\projects\Automation_Network\project-files\dynamips\26203d82-48be-485b-91ea-07cfc23ceb87
+Feb 04 15:55:43.056 HYPERVISOR: exec_cmd: vm create R9 9 c7200 
+Feb 04 15:55:43.059 VM: VM R9 created.
+Feb 04 15:55:43.060 HYPERVISOR: exec_cmd: vm set_con_tcp_port R9 5009 
+Feb 04 15:55:43.060 HYPERVISOR: exec_cmd: c7200 get_mac_addr R9 
+Feb 04 15:55:43.061 HYPERVISOR: exec_cmd: vm get_status R9 
+Feb 04 15:55:43.061 HYPERVISOR: exec_cmd: vm slot_add_binding R9 0 0 C7200-IO-FE 
+Feb 04 15:55:43.061 HYPERVISOR: exec_cmd: vm set_disk0 R9 0 
+Feb 04 15:55:43.064 HYPERVISOR: exec_cmd: vm set_exec_area R9 64 
+Feb 04 15:55:43.064 HYPERVISOR: exec_cmd: vm set_ios R9 C:/Users/USER/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Feb 04 15:55:43.064 HYPERVISOR: exec_cmd: c7200 set_mac_addr R9 ca09.2360.0000 
+Feb 04 15:55:43.064 HYPERVISOR: exec_cmd: vm set_nvram R9 512 
+Feb 04 15:55:43.064 HYPERVISOR: exec_cmd: vm set_ram R9 512 
+Feb 04 15:55:43.069 HYPERVISOR: exec_cmd: vm get_status R9 
+Feb 04 15:55:43.069 HYPERVISOR: exec_cmd: vm slot_add_binding R9 1 0 PA-GE 
+Feb 04 15:55:43.070 HYPERVISOR: exec_cmd: vm get_status R9 
+Feb 04 15:55:43.070 HYPERVISOR: exec_cmd: vm slot_add_binding R9 2 0 PA-GE 
+Feb 04 15:55:43.071 HYPERVISOR: exec_cmd: vm get_status R9 
+Feb 04 15:55:43.071 HYPERVISOR: exec_cmd: vm slot_add_binding R9 3 0 PA-GE 
+Feb 04 15:55:43.073 HYPERVISOR: exec_cmd: vm set_con_tcp_port R9 5009 
+Feb 04 15:55:52.112 HYPERVISOR: exec_cmd: nio create_udp udp-ca7e2eb4-d34c-4aba-a57d-aab02c221400 10016 127.0.0.1 10017 
+Feb 04 15:55:52.960 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 1 0 udp-ca7e2eb4-d34c-4aba-a57d-aab02c221400 
+Feb 04 15:55:52.960 HYPERVISOR: exec_cmd: vm get_status R9 
+Feb 04 15:55:53.040 HYPERVISOR: exec_cmd: nio create_udp udp-d5fca6f0-a12e-4563-b49d-c98d3c939c4f 10020 127.0.0.1 10021 
+Feb 04 15:55:53.045 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 2 0 udp-d5fca6f0-a12e-4563-b49d-c98d3c939c4f 
+Feb 04 15:55:53.046 HYPERVISOR: exec_cmd: vm get_status R9 
+Feb 04 15:56:00.756 HYPERVISOR: exec_cmd: nio create_udp udp-fe2afed3-b879-45ea-8221-8714d56676ba 10098 127.0.0.1 10099 
+Feb 04 15:56:00.762 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R9 3 0 udp-fe2afed3-b879-45ea-8221-8714d56676ba 
+Feb 04 15:56:00.763 HYPERVISOR: exec_cmd: vm get_status R9 
+Feb 04 16:45:30.778 HYPERVISOR: exec_cmd: vm get_status R9 
+Feb 04 16:45:30.780 HYPERVISOR: exec_cmd: vm extract_config R9 
+Feb 04 16:45:30.997 HYPERVISOR: exec_cmd: vm get_status R9 
+Feb 04 16:45:31.000 HYPERVISOR: exec_cmd: vm extract_config R9 
+Feb 04 16:45:31.003 HYPERVISOR: exec_cmd: vm delete R9 
+Feb 04 16:45:31.004 VM: VM R9 destroyed.
+Feb 04 16:45:31.007 HYPERVISOR: exec_cmd: hypervisor stop 
+Feb 04 16:45:31.351 HYPERVISOR: Stopped.
+Feb 04 16:45:31.352 GENERAL: reset done.
