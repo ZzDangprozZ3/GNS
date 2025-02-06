@@ -1,6 +1,4 @@
-import json
-
-dict = {
+{
     "Routers": {
         "R1": {
             "Router ID": "1.1.1.1",
@@ -22,7 +20,11 @@ dict = {
             "Protocols": {
                 "RIP": {
                     "Name": "RIP1",
-                    "Interfaces": ["GigabitEthernet1/0","GigabitEthernet2/0", "Loopback 0"]
+                    "Interfaces": [
+                        "GigabitEthernet1/0",
+                        "GigabitEthernet2/0",
+                        "Loopback 0"
+                    ]
                 },
                 "BGP": {
                     "Neighbors": {
@@ -33,8 +35,7 @@ dict = {
                         "2001::6": "111",
                         "2001::7": "111"
                     },
-                    "Advertise":[
-                    ]                   
+                    "Advertise": []
                 }
             }
         },
@@ -62,7 +63,12 @@ dict = {
             "Protocols": {
                 "RIP": {
                     "Name": "RIP1",
-                    "Interfaces": ["GigabitEthernet1/0", "GigabitEthernet2/0","GigabitEthernet3/0", "Loopback 0"]
+                    "Interfaces": [
+                        "GigabitEthernet1/0",
+                        "GigabitEthernet2/0",
+                        "GigabitEthernet3/0",
+                        "Loopback 0"
+                    ]
                 },
                 "BGP": {
                     "Neighbors": {
@@ -73,8 +79,7 @@ dict = {
                         "2001::6": "111",
                         "2001::7": "111"
                     },
-                    "Advertise":[
-                    ]                   
+                    "Advertise": []
                 }
             }
         },
@@ -97,12 +102,17 @@ dict = {
                 "Loopback 0": {
                     "IP": "2001::3",
                     "Mask": "128"
-                }             
+                }
             },
             "Protocols": {
                 "RIP": {
                     "Name": "RIP1",
-                    "Interfaces": ["GigabitEthernet1/0", "GigabitEthernet2/0", "GigabitEthernet3/0", "Loopback 0"],                    
+                    "Interfaces": [
+                        "GigabitEthernet1/0",
+                        "GigabitEthernet2/0",
+                        "GigabitEthernet3/0",
+                        "Loopback 0"
+                    ]
                 },
                 "BGP": {
                     "Neighbors": {
@@ -113,8 +123,7 @@ dict = {
                         "2001::6": "111",
                         "2001::7": "111"
                     },
-                    "Advertise":[
-                    ]                   
+                    "Advertise": []
                 }
             }
         },
@@ -141,12 +150,18 @@ dict = {
                 "Loopback 0": {
                     "IP": "2001::4",
                     "Mask": "128"
-                }             
+                }
             },
             "Protocols": {
                 "RIP": {
                     "Name": "RIP1",
-                    "Interfaces": ["FastEthernet0/0","GigabitEthernet1/0","GigabitEthernet2/0","GigabitEthernet3/0", "Loopback 0"],
+                    "Interfaces": [
+                        "FastEthernet0/0",
+                        "GigabitEthernet1/0",
+                        "GigabitEthernet2/0",
+                        "GigabitEthernet3/0",
+                        "Loopback 0"
+                    ]
                 },
                 "BGP": {
                     "Neighbors": {
@@ -157,8 +172,7 @@ dict = {
                         "2001::6": "111",
                         "2001::7": "111"
                     },
-                    "Advertise":[
-                    ]                   
+                    "Advertise": []
                 }
             }
         },
@@ -185,12 +199,18 @@ dict = {
                 "Loopback 0": {
                     "IP": "2001::5",
                     "Mask": "128"
-                }             
+                }
             },
             "Protocols": {
                 "RIP": {
                     "Name": "RIP1",
-                    "Interfaces": ["FastEthernet0/0","GigabitEthernet1/0","GigabitEthernet2/0","GigabitEthernet3/0", "Loopback 0"],
+                    "Interfaces": [
+                        "FastEthernet0/0",
+                        "GigabitEthernet1/0",
+                        "GigabitEthernet2/0",
+                        "GigabitEthernet3/0",
+                        "Loopback 0"
+                    ]
                 },
                 "BGP": {
                     "Neighbors": {
@@ -201,8 +221,7 @@ dict = {
                         "2001::6": "111",
                         "2001::7": "111"
                     },
-                    "Advertise":[
-                    ]                   
+                    "Advertise": []
                 }
             }
         },
@@ -225,13 +244,19 @@ dict = {
                 "Loopback 0": {
                     "IP": "2001::6",
                     "Mask": "128"
-                }             
+                }
             },
             "Protocols": {
                 "RIP": {
                     "Name": "RIP1",
-                    "Interfaces": ["GigabitEthernet1/0","GigabitEthernet2/0", "Loopback 0"],
-                    "Redistribute":["connected"]
+                    "Interfaces": [
+                        "GigabitEthernet1/0",
+                        "GigabitEthernet2/0",
+                        "Loopback 0"
+                    ],
+                    "Redistribute": [
+                        "connected"
+                    ]
                 },
                 "BGP": {
                     "Neighbors": {
@@ -243,7 +268,7 @@ dict = {
                         "2001::7": "111",
                         "2001:69:69:69::9": "112"
                     },
-                    "Advertise":[
+                    "Advertise": [
                         "2001::1/128",
                         "2001::2/128",
                         "2001::3/128",
@@ -261,7 +286,7 @@ dict = {
                         "2001:47:47:47::/64",
                         "2001:57:57:57::/64",
                         "2001:56:56:56::/64"
-                    ]                   
+                    ]
                 }
             }
         },
@@ -284,13 +309,19 @@ dict = {
                 "Loopback 0": {
                     "IP": "2001::7",
                     "Mask": "128"
-                }             
+                }
             },
             "Protocols": {
                 "RIP": {
                     "Name": "RIP1",
-                    "Interfaces": ["GigabitEthernet1/0","GigabitEthernet2/0", "Loopback 0"],
-                    "Redistribute":["connected"]
+                    "Interfaces": [
+                        "GigabitEthernet1/0",
+                        "GigabitEthernet2/0",
+                        "Loopback 0"
+                    ],
+                    "Redistribute": [
+                        "connected"
+                    ]
                 },
                 "BGP": {
                     "Neighbors": {
@@ -300,9 +331,9 @@ dict = {
                         "2001::4": "111",
                         "2001::5": "111",
                         "2001::6": "111",
-                        "2001:78:78:78::8":"112"
+                        "2001:78:78:78::8": "112"
                     },
-                    "Advertise":[
+                    "Advertise": [
                         "2001::1/128",
                         "2001::2/128",
                         "2001::3/128",
@@ -321,7 +352,7 @@ dict = {
                         "2001:57:57:57::/64",
                         "2001:56:56:56::/64",
                         "2001:78:78:78::/64"
-                    ]                   
+                    ]
                 }
             }
         },
@@ -349,13 +380,19 @@ dict = {
             "Protocols": {
                 "OSPF": {
                     "Name": "2",
-                    "Interfaces": ["GigabitEthernet2/0", "GigabitEthernet3/0", "Loopback 0"],
+                    "Interfaces": [
+                        "GigabitEthernet2/0",
+                        "GigabitEthernet3/0",
+                        "Loopback 0"
+                    ],
                     "Area": "0",
-                    "Redistribute":["connected"]
+                    "Redistribute": [
+                        "connected"
+                    ]
                 },
                 "BGP": {
                     "Neighbors": {
-                        "2001:78:78:78::7":"111",                        
+                        "2001:78:78:78::7": "111",
                         "2001::9": "112",
                         "2001::10": "112",
                         "2001::11": "112",
@@ -363,7 +400,7 @@ dict = {
                         "2001::13": "112",
                         "2001::14": "112"
                     },
-                    "Advertise":[
+                    "Advertise": [
                         "2001:810:810:810::/64",
                         "2001:811:811:811::/64",
                         "2001:910:910:910::/64",
@@ -380,7 +417,7 @@ dict = {
                         "2001::11/128",
                         "2001::12/128",
                         "2001::13/128",
-                        "2001::14/128",
+                        "2001::14/128"
                     ]
                 }
             }
@@ -410,12 +447,18 @@ dict = {
                 "OSPF": {
                     "Name": "2",
                     "Area": "0",
-                    "Interfaces": ["GigabitEthernet2/0", "GigabitEthernet3/0", "Loopback 0"],
-                    "Redistribute":["connected"]
+                    "Interfaces": [
+                        "GigabitEthernet2/0",
+                        "GigabitEthernet3/0",
+                        "Loopback 0"
+                    ],
+                    "Redistribute": [
+                        "connected"
+                    ]
                 },
                 "BGP": {
-                    "Neighbors": {                        
-                        "2001:69:69:69::6":"111",                        
+                    "Neighbors": {
+                        "2001:69:69:69::6": "111",
                         "2001::8": "112",
                         "2001::10": "112",
                         "2001::11": "112",
@@ -423,7 +466,7 @@ dict = {
                         "2001::13": "112",
                         "2001::14": "112"
                     },
-                    "Advertise":[
+                    "Advertise": [
                         "2001:810:810:810::/64",
                         "2001:811:811:811::/64",
                         "2001:910:910:910::/64",
@@ -440,7 +483,7 @@ dict = {
                         "2001::11/128",
                         "2001::12/128",
                         "2001::13/128",
-                        "2001::14/128",
+                        "2001::14/128"
                     ]
                 }
             }
@@ -474,10 +517,16 @@ dict = {
                 "OSPF": {
                     "Name": "2",
                     "Area": "0",
-                    "Interfaces": ["FastEthernet0/0", "GigabitEthernet1/0","GigabitEthernet2/0","GigabitEthernet3/0", "Loopback 0"]
+                    "Interfaces": [
+                        "FastEthernet0/0",
+                        "GigabitEthernet1/0",
+                        "GigabitEthernet2/0",
+                        "GigabitEthernet3/0",
+                        "Loopback 0"
+                    ]
                 },
                 "BGP": {
-                    "Neighbors": {                        
+                    "Neighbors": {
                         "2001::8": "112",
                         "2001::9": "112",
                         "2001::11": "112",
@@ -485,8 +534,7 @@ dict = {
                         "2001::13": "112",
                         "2001::14": "112"
                     },
-                    "Advertise":[
-                    ]
+                    "Advertise": []
                 }
             }
         },
@@ -519,20 +567,24 @@ dict = {
                 "OSPF": {
                     "Name": "2",
                     "Area": "0",
-                    "Interfaces": ["FastEthernet0/0", "GigabitEthernet1/0","GigabitEthernet2/0","GigabitEthernet3/0", "Loopback 0"]
+                    "Interfaces": [
+                        "FastEthernet0/0",
+                        "GigabitEthernet1/0",
+                        "GigabitEthernet2/0",
+                        "GigabitEthernet3/0",
+                        "Loopback 0"
+                    ]
                 },
                 "BGP": {
-                    "Neighbors": {                        
+                    "Neighbors": {
                         "2001::8": "112",
                         "2001::9": "112",
                         "2001::10": "112",
                         "2001::12": "112",
                         "2001::13": "112",
                         "2001::14": "112"
-
                     },
-                    "Advertise":[
-                    ]
+                    "Advertise": []
                 }
             }
         },
@@ -561,10 +613,15 @@ dict = {
                 "OSPF": {
                     "Name": "2",
                     "Area": "0",
-                    "Interfaces": ["GigabitEthernet1/0","GigabitEthernet2/0","GigabitEthernet3/0", "Loopback 0"]
+                    "Interfaces": [
+                        "GigabitEthernet1/0",
+                        "GigabitEthernet2/0",
+                        "GigabitEthernet3/0",
+                        "Loopback 0"
+                    ]
                 },
                 "BGP": {
-                    "Neighbors": {                        
+                    "Neighbors": {
                         "2001::8": "112",
                         "2001::9": "112",
                         "2001::10": "112",
@@ -572,8 +629,7 @@ dict = {
                         "2001::13": "112",
                         "2001::14": "112"
                     },
-                    "Advertise":[
-                    ]
+                    "Advertise": []
                 }
             }
         },
@@ -602,10 +658,15 @@ dict = {
                 "OSPF": {
                     "Name": "2",
                     "Area": "0",
-                    "Interfaces": ["GigabitEthernet1/0","GigabitEthernet2/0","GigabitEthernet3/0", "Loopback 0"]
+                    "Interfaces": [
+                        "GigabitEthernet1/0",
+                        "GigabitEthernet2/0",
+                        "GigabitEthernet3/0",
+                        "Loopback 0"
+                    ]
                 },
                 "BGP": {
-                    "Neighbors": {                        
+                    "Neighbors": {
                         "2001::8": "112",
                         "2001::9": "112",
                         "2001::10": "112",
@@ -613,8 +674,7 @@ dict = {
                         "2001::12": "112",
                         "2001::14": "112"
                     },
-                    "Advertise":[
-                    ]
+                    "Advertise": []
                 }
             }
         },
@@ -639,10 +699,14 @@ dict = {
                 "OSPF": {
                     "Name": "2",
                     "Area": "0",
-                    "Interfaces": ["GigabitEthernet1/0","GigabitEthernet2/0", "Loopback 0"]
+                    "Interfaces": [
+                        "GigabitEthernet1/0",
+                        "GigabitEthernet2/0",
+                        "Loopback 0"
+                    ]
                 },
                 "BGP": {
-                    "Neighbors": {                        
+                    "Neighbors": {
                         "2001::8": "112",
                         "2001::9": "112",
                         "2001::10": "112",
@@ -650,16 +714,9 @@ dict = {
                         "2001::12": "112",
                         "2001::13": "112"
                     },
-                    "Advertise":[
-                    ]
+                    "Advertise": []
                 }
             }
-        }                    
+        }
     }
 }
-
-# Créer le fichier JSON à partir du dictionnaire
-with open('routers_data.json', 'w', encoding='utf-8') as json_file:
-    json.dump(dict, json_file, indent=4, ensure_ascii=False)
-
-print("Le fichier JSON a été créé avec succès.")

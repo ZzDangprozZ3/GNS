@@ -5,7 +5,7 @@ import json
 
 # Connect to GNS3
 server = Gns3Connector("http://localhost:3080")
-project_name = "BGP Polices"
+project_name = "Automation_Network"
 project = Project(name=project_name, connector=server)
 project.get()
 
@@ -139,12 +139,15 @@ def configure_bgp(tn, settings, as_number, router_id):
 
     # Neighbors configurations
     for neighbor, remote_as in settings["Neighbors"].items():
-        send_telnet_commands(tn, [
-            f"neighbor {neighbor} remote-as {remote_as}",
-            "address-family ipv6 unicast",
-            f"neighbor {neighbor} activate",
-            "exit"
-        ])
+        commands = []
+        commands.append(f"neighbor {neighbor} remote-as {remote_as}")
+        commands.append("address-family ipv6 unicast")
+        commands.append(f"neighbor {neighbor} activate")
+        if remote_as ==  as_number:
+            commands.append(f"neighbor {neighbor} update-source loop 0")
+        commands.append("exit")
+        send_telnet_commands(tn, commands)
+
 
     # Advertising
     if "Advertise" in settings:
